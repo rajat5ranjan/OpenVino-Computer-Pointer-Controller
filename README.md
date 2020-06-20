@@ -2,6 +2,7 @@
 
 Computer Pointer Controller is an application that uses a gaze detection model to control the mouse pointer using an input video or a live stream from your webcam
 
+
 ![Intro](imgs/sc3.jpg)
 
 ## Project Set Up and Installation
@@ -96,6 +97,7 @@ python <main.py directory> -fd <Face detection model name directory> -fl <Facial
 ```
 
 ## Directory Structure of the project 
+
 ![Directory Structure](imgs/src.jpg)
 
 - src folder contains all the source files:-
@@ -129,6 +131,7 @@ python <main.py directory> -fd <Face detection model name directory> -fl <Facial
 ```
 python main.py -fd "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\face-detection-adas-binary-0001\FP32-INT1\face-detection-adas-binary-0001" -fl "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\landmarks-regression-retail-0009\FP16\landmarks-regression-retail-0009" -hp "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\head-pose-estimation-adas-0001\FP16\head-pose-estimation-adas-0001" -ge "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\gaze-estimation-adas-0002\FP16\gaze-estimation-adas-0002"  -i C:\Users\Acer\Desktop\openvino\starter\bin\demo.mp4 -d CPU
 ```
+
 ![s1](imgs/sc1.jpg)
 
 
@@ -136,18 +139,20 @@ python main.py -fd "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\face-
 ```
 python main.py -fd "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\face-detection-adas-binary-0001\FP32-INT1\face-detection-adas-binary-0001" -fl "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\landmarks-regression-retail-0009\FP16\landmarks-regression-retail-0009" -hp "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\head-pose-estimation-adas-0001\FP16\head-pose-estimation-adas-0001" -ge "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\gaze-estimation-adas-0002\FP16\gaze-estimation-adas-0002"  -i CAM -d CPU
 ```
+
 ![s2](imgs/sc2.jpg)
 
 ### Running on CPU with Camera with Visualisations
 ```
 python main.py -fd "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\face-detection-adas-binary-0001\FP32-INT1\face-detection-adas-binary-0001" -fl "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\landmarks-regression-retail-0009\FP16\landmarks-regression-retail-0009" -hp "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\head-pose-estimation-adas-0001\FP16\head-pose-estimation-adas-0001" -ge "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\gaze-estimation-adas-0002\FP16\gaze-estimation-adas-0002"  -i CAM -d CPU -flag fl fd ge
 ```
+
 ![s3](imgs/sc4.jpg)
 
 
 ## Benchmarks
 
-Hardware configuration: Intel Core i5-8250U 1.6Ghz with Turbo Boost upto 3.4 GHz CPU
+Hardware configuration: **Intel Core i5-8250U 1.6Ghz with Turbo Boost upto 3.4 GHz CPU**
 
 The models were ran in the above configuration
 
@@ -156,11 +161,13 @@ The models were ran in the above configuration
 ### Model Size
 
 * **face-detection-adas-binary-0001**
+
 | Type         | Size of Model |
 |--------------|---------------|
 |  FP32-INT1   |  1.86M        |
 
 * **head-pose-estimation-adas-0001**
+
 | Type         | Size of Model |
 |--------------|---------------|
 |  FP16   |  3.69M       |
@@ -168,6 +175,7 @@ The models were ran in the above configuration
 |  FP32   |  7.34M        |
 
 * **landmarks-regression-retail-0009**
+
 | Type         | Size of Model |
 |--------------|---------------|
 |  FP16   |  413KB      |
@@ -175,6 +183,7 @@ The models were ran in the above configuration
 |  FP32   |  786KB       |
 
 * **gaze-estimation-adas-0002**
+
 | Type         | Size of Model |
 |--------------|---------------|
 |  FP16   |  3.65M        |
@@ -198,7 +207,7 @@ python main.py -fd "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\face-
 |face-detection-adas-binary-0001| FP32-INT1 |564.251 ms|
 |head-pose-estimation-adas-0001 | FP16 |282.284 ms|
 |landmarks-regression-retail-0009 | FP16 | 267.775 ms|
-|gaze-estimation-adas-0002 - FP16 | 369.647 ms|
+|gaze-estimation-adas-0002 | FP16 | 369.647 ms|
 
 #### Combo 2
 
@@ -215,7 +224,7 @@ python main.py -fd "C:\Program Files (x86)\IntelSWTools\openvino\bin\intel\face-
 |face-detection-adas-binary-0001| FP32-INT1 |571.465 ms|
 |head-pose-estimation-adas-0001 | FP32 |367.234 ms|
 |landmarks-regression-retail-0009 | FP32 | 267.775 ms|
-|gaze-estimation-adas-0002 - FP32 |  336.397 ms|
+|gaze-estimation-adas-0002 | FP32 |  336.397 ms|
 
 
 #### Combo 3
