@@ -2,7 +2,7 @@
 
 Computer Pointer Controller is an application that uses a gaze detection model to control the mouse pointer using an input video or a live stream from your webcam
 
-![Intro](imgs/src3.jpg)
+![Intro](imgs/sc3.jpg)
 
 ## Project Set Up and Installation
 
@@ -62,10 +62,10 @@ Following are commanda line arguments that can use for while running the main.py
   3. -hp    (required) : Specify the path of Head Pose Estimation model's xml file
   4. -ge     (required) : Specify the path of Gaze Estimation model's xml file
   5. -i     (required) : Specify the path of input video file or enter cam for taking input video from webcam
-  6. -d     (optional) : Specify the target device to infer the video file on the model. Suppoerted devices are: CPU, GPU,                            FPGA (For running on FPGA used HETERO:FPGA,CPU), MYRIAD.
+  6. -d     (optional) : Specify the target device to infer the video file on the model. Suppoerted devices are: CPU, GPU,FPGA (For running on FPGA used HETERO:FPGA,CPU), MYRIAD.
   7. -l     (optional) : Specify the absolute path of cpu extension if some layers of models are not supported on the device.
   9. -pt  (optional) : Specify the probability threshold for face detection model to detect the face accurately from video frame.
-  8. -flag (optional) : Specify the flags from fd, fld, hp, ge if you want to visualize the output of corresponding models                           of each frame (write flags with space seperation. Ex:- -flags fd fld hp).
+  8. -flag (optional) : Specify the flags from fd, fld, hp, ge if you want to visualize the output of corresponding models of each frame (write flags with space seperation. Ex:- -flags fd fld hp).
 
 ```
 
